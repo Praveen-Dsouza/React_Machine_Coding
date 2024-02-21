@@ -1,0 +1,30 @@
+.progress_container {
+    font-family: sans-serif;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.progress_bar {
+    height: 20px;
+    width: 500px;
+    background-color: rgb(233, 236, 239);
+    border: 1px solid #c8c8c8;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress_value {
+    /* width: 100%; */
+    width: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.progress_bar div {
+    height: 100%;
+    background-color: #00c251;
+}
