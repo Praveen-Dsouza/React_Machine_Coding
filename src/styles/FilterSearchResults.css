@@ -1,0 +1,49 @@
+.filter_search {
+    margin: 20px;
+    width: 100%;
+  }
+  
+.search_bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+}
+  
+input {
+    padding: 10px;
+    margin-right: 10px;
+}
+  
+button {
+    padding: 10px;
+}
+
+.data_container {
+        display: flex;
+}
+  
+.original_data,
+.filtered_results {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+  
+.filtered_results {
+    margin-right: 0;
+}
+  
+h3 {
+    margin-bottom: 10px;
+}
+  
+p {
+    margin: 5px 0;
+}
+
+p:empty {
+    display: none;
+}
+  

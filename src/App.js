@@ -1,5 +1,6 @@
 import "./App.css";
-import CountdownTimer from "./components/CountdownTimer";
+// import CountdownTimer from "./components/CountdownTimer";
+import FilterSearchResults from "./components/FilterSearchResults";
 // import Debouncing from './components/Debouncing';
 // import Pagination from './components/Pagination';
 
@@ -9,7 +10,8 @@ function App() {
       <div className="items-center">
         {/* <Debouncing/> */}
         {/* <Pagination/> */}
-        <CountdownTimer />
+        {/* <CountdownTimer /> */}
+        <FilterSearchResults/>
       </div>
     </div>
   );
