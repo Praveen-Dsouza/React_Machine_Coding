@@ -1,11 +1,16 @@
+import { useState } from "react";
 import "./App.css";
+import { fileData } from "./Constants";
+import Folder from "./components/Folder";
 // import CountdownTimer from "./components/CountdownTimer";
 // import FilterSearchResults from "./components/FilterSearchResults";
-import ProgressBar from "./components/ProgressBar";
+// import ProgressBar from "./components/ProgressBar";
 // import Debouncing from './components/Debouncing';
 // import Pagination from './components/Pagination';
 
 function App() {
+  const [explorerData, setExplorerData] = useState(fileData);
+
   return (
     <div>
       <div className="items-center">
@@ -13,7 +18,8 @@ function App() {
         {/* <Pagination/> */}
         {/* <CountdownTimer /> */}
         {/* <FilterSearchResults/> */}
-        <ProgressBar />
+        {/* <ProgressBar /> */}
+        <Folder explorer={explorerData} />
       </div>
     </div>
   );
