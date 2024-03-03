@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/StarRating.css";
 import { tenureData } from '../utils/Constants';
-import { numberWithCommas } from '../utils/config';
+import { numberLimit, numberWithCommas } from '../utils/config';
 import TextInput from './Common/TextInput';
 import Slider from './Common/Slider';
 
@@ -76,9 +76,9 @@ const EMICalculator = () => {
       <span className='title header'>EMI Calculator</span>
         <TextInput  title={"Total Cost of Assets"} state={cost} setState={setCost} />
 
-        <TextInput  title={"Interest Rate (in%)"} state={interest} setState={setInterest} />
+        <TextInput  title={"Interest Rate (in%)"} state={numberLimit(interest)} setState={setInterest} />
 
-        <TextInput  title={"Processing Fee (in%)"} state={fee} setState={setFee} />
+        <TextInput  title={"Processing Fee (in%)"} state={numberLimit(fee)} setState={setFee} />
 
         <Slider 
             title={"Down Payment"} 
