@@ -63,3 +63,4 @@ export const fileData = {
     ],
   };
     
+export const tenureData = [10, 15, 20, 25, 30]

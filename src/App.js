@@ -1,7 +1,8 @@
-import { useState } from "react";
 import "./App.css";
-import { fileData } from "./Constants";
-import Folder from "./components/Folder";
+// import { useState } from "react";
+// import { fileData } from "./utils/Constants";
+// import Folder from "./components/Folder";
+import StarRating from "./components/StarRating";
 // import CountdownTimer from "./components/CountdownTimer";
 // import FilterSearchResults from "./components/FilterSearchResults";
 // import ProgressBar from "./components/ProgressBar";
@@ -9,7 +10,7 @@ import Folder from "./components/Folder";
 // import Pagination from './components/Pagination';
 
 function App() {
-  const [explorerData, setExplorerData] = useState(fileData);
+  // const [explorerData, setExplorerData] = useState(fileData);
 
   return (
     <div>
@@ -19,7 +20,8 @@ function App() {
         {/* <CountdownTimer /> */}
         {/* <FilterSearchResults/> */}
         {/* <ProgressBar /> */}
-        <Folder explorer={explorerData} />
+        {/* <Folder explorer={explorerData} /> */}
+        <StarRating/>
       </div>
     </div>
   );
