@@ -5,7 +5,7 @@ import { numberWithCommas } from '../utils/config';
 import TextInput from './Common/TextInput';
 import Slider from './Common/Slider';
 
-const StarRating = () => {
+const EMICalculator = () => {
     const [cost, setCost] = useState(0);
     const [interest, setInterest] = useState(10);
     const [fee, setFee] = useState(2);
@@ -112,4 +112,4 @@ const StarRating = () => {
   )
 }
 
-export default StarRating
+export default EMICalculator
