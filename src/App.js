@@ -1,8 +1,9 @@
 import "./App.css";
+import CheckoutStepper from "./components/CheckoutStepper";
 // import { useState } from "react";
 // import { fileData } from "./utils/Constants";
 // import Folder from "./components/Folder";
-import EMICalculator from "./components/EMICalculator";
+// import EMICalculator from "./components/EMICalculator";
 // import CountdownTimer from "./components/CountdownTimer";
 // import FilterSearchResults from "./components/FilterSearchResults";
 // import ProgressBar from "./components/ProgressBar";
@@ -21,7 +22,8 @@ function App() {
         {/* <FilterSearchResults/> */}
         {/* <ProgressBar /> */}
         {/* <Folder explorer={explorerData} /> */}
-        <EMICalculator/>
+        {/* <EMICalculator/> */}
+        <CheckoutStepper/>
       </div>
     </div>
   );
